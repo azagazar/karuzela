@@ -1,23 +1,20 @@
 $(function(){
         var carousel = $('.carousel ul');
-        var carouselList = $('li')
         
         function changeSlide () {
-        	
+        	carousel.animate({'marginLeft':-400}, 500, moveFirstSlide);
         }
 
         setInterval(changeSlide, 3000);
         
-		carouselList.animate({'marginLeft':-400}, 500, moveFirstSlide);
-
 		function moveFirstSlide () {
 
-			var firstItem = carouselList.find("li:first");
-			var lastItem = carouselList.find("li:last");
+			var firstItem = carousel.find("li:first");
+			var lastItem = carousel.find("li:last");
 
 			lastItem.after(firstItem)
 
-			carouselList.css({marginLeft:0});
+			carousel.css({marginLeft:0});
 		}
 
 			
