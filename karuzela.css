@@ -1,0 +1,30 @@
+.carousel
+{
+    width: 400px;
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+}
+
+.carousel ul
+{
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 2000px;
+}
+
+.carousel ul li
+{
+    height: auto;
+    width: 400px;
+    float: left;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+img
+{
+	width: 400px;
+}
